@@ -8,11 +8,13 @@ import Form from "./Form";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./Header";
 import Routing from "./Routing";
+import Fakestore from "./Fakestore";
 
 function App() {
   return (
     <>
-     <Routing/>
+      {/* <Routing/> */}
+       <Fakestore/>
     </>
   );
 }
