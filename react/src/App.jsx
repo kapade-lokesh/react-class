@@ -5,16 +5,16 @@ import "./App.css";
 import { Todo } from "./Todo";
 import Counter from "./Counter";
 import Form from "./Form";
-import "bootstrap/dist/css/bootstrap.css";
 import Header from "./Header";
 import Routing from "./Routing";
 import Fakestore from "./Fakestore";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
       {/* <Routing/> */}
-       <Fakestore/>
+      <Fakestore />
     </>
   );
 }
