@@ -9,12 +9,15 @@ import Header from "./Header";
 import Routing from "./Routing";
 import Fakestore from "./Fakestore";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CheckCont from "./CheckCont";
 
 function App() {
   return (
     <>
       {/* <Routing/> */}
-      <Fakestore />
+      <Counter />
+
+      <CheckCont />
     </>
   );
 }
