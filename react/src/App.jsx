@@ -10,14 +10,12 @@ import Routing from "./Routing";
 import Fakestore from "./Fakestore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CheckCont from "./CheckCont";
+import Hero from "./Hero";
 
 function App() {
   return (
     <>
-      {/* <Routing/> */}
-      <Counter />
-
-      <CheckCont />
+      <Routing />
     </>
   );
 }

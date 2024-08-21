@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand img {
+  height: 32px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu-button {
+  display: flex;
+}
+
+.mobile-menu-icon {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive CSS */
+@media (min-width: 768px) {
+  .desktop-menu {
+    display: block;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .mobile-menu {
+    display: block;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px 0;
+  }
+
+  .nav-links-mobile li {
+    margin: 5px 0;
+  }
+
+  .nav-links-mobile a {
+    color: white;
+    text-decoration: none;
+  }
+}
