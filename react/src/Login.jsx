@@ -49,6 +49,7 @@ function Login() {
             className="btn btn-outline-success w-50"
             onClick={() => {
               disptch(isLogin(data));
+              nav("/profile");
             }}
           >
             Login

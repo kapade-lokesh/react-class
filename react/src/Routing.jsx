@@ -7,6 +7,8 @@ import Cart from "./Cart";
 import Login from "./Login";
 import Registration from "./Registration";
 import Profile from "./Profile";
+import ProtectedRoute from "./ProtectedRoute";
+import Demo from "./Demo";
 const Routing = () => {
   return (
     <div>
@@ -15,7 +17,14 @@ const Routing = () => {
         <Routes>
           <Route path="/" element={<Fakestore />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/cart"
+            element={
+              <ProtectedRoute>
+                <Cart />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/profile" element={<Profile />} />

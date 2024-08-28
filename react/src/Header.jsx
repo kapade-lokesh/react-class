@@ -9,7 +9,7 @@ const navigation = [
   { name: "login", href: "/login", current: false },
   { name: "profile", href: "/profile", current: false },
 ];
-
+        
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }

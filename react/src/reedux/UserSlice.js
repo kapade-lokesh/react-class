@@ -11,11 +11,14 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     isRegister: (state, action) => {
+      console.log(action.payload);
       state.userData = action.payload;
       state.Register = true;
+      console.log(state.userData);
     },
 
     isLogin: (state, action) => {
+      console.log(action.payload);
       if (
         state.userData.name == action.payload.name &&
         state.userData.password == action.payload.password
